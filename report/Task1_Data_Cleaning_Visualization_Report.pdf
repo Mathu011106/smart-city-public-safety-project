@@ -1,0 +1,24 @@
+Report title:
+    Smart City Public Safety – Data Cleaning & Visualization
+
+Sections:
+    Introduction
+    Problem Statement
+    Objectives
+    Dataset Description
+    Data Cleaning
+    Missing values
+    Duplicates
+    Outliers
+    Exploratory Visualization
+    Key Findings
+    Tools & Technologies
+    Conclusion
+
+Tools:
+    Python
+    Pandas
+    NumPy
+    Matplotlib
+    Seaborn
+    Jupyter Notebook
