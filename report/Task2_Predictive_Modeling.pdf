@@ -1,0 +1,51 @@
+1. Introduction
+
+Smart City Public Safety project predicts the emergency level of incidents using machine learning techniques.
+
+2. Objective
+
+    Build predictive classification models.
+    Predict emergency levels.
+    Compare multiple supervised learning algorithms.
+    Evaluate model performance using classification metrics, confusion matrix and ROC-AUC.
+
+3. Dataset
+    Records: 9,800
+    Features: 13 predictive features after removing Incident_ID and target
+    Target: Emergency_Level
+    Classes: Low, Medium, High
+
+4. Algorithms Used
+    Logistic Regression
+    Decision Tree
+    Random Forest
+    Support Vector Machine (SVM)
+
+5. Data Preparation
+    Cleaned dataset from Task 1 was used.
+    Categorical features were label encoded.
+    Target variable was encoded.
+    Dataset split into 80% training and 20% testing.
+    StandardScaler was used for feature scaling.
+
+6. Evaluation Metrics
+    Accuracy
+    Precision
+    Recall
+    F1 Score
+    Confusion Matrix
+    ROC-AUC
+
+7. Results
+    ==================================================
+    Best Model
+    ==================================================
+    Model        Logistic Regression
+    Accuracy                0.994898
+    Precision               0.994917
+    Recall                  0.994898
+    F1 Score                0.994874
+    Name: 0, dtype: object
+
+8. Conclusion
+The project demonstrates the use of supervised machine learning for predicting emergency levels in a smart city public safety environment. Multiple classification algorithms were trained and compared using standard evaluation metrics. The best-performing model was selected based on the evaluation results. Confusion matrix and ROC-AUC analysis were also used to understand model performance.
