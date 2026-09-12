@@ -1,0 +1,171 @@
+TASK 3 – EXPLORATORY DATA ANALYSIS REPORT
+
+Smart City Public Safety and Emergency Response
+
+1. Introduction
+The Smart City Public Safety and Emergency Response project focuses on analyzing public safety incidents and understanding the factors associated with different emergency levels.
+Exploratory Data Analysis (EDA) was performed on the cleaned dataset to understand the structure, distribution, patterns, and relationships between the variables.
+The analysis provides useful insights that can support public safety monitoring and future data-driven decision-making.
+
+2. Objectives
+The main objectives of this EDA are:
+    To understand the structure and characteristics of the dataset.
+    To analyze categorical and numerical variables.
+    To study the distribution of emergency levels.
+    To identify common incident types and affected areas.
+    To analyze relationships between incident characteristics and emergency levels.
+    To study severity scores and emergency response times.
+    To identify relationships between numerical variables using correlation analysis.
+    To extract meaningful patterns from the dataset.
+
+3. Dataset Description
+The dataset contains records related to Smart City public safety incidents.
+
+Important features include:
+    Incident_ID – Unique identifier for each incident.  
+    Incident_Type – Type of public safety incident.
+    Area – Location where the incident occurred.
+    Time_of_Day – Time category of the incident.
+    Day_of_Week – Day on which the incident occurred.
+    Weather – Weather condition during the incident.
+    Crowd_Level – Crowd condition at the incident location.
+    CCTV_Available – Availability of CCTV.
+    Police_Response_Time – Police response time.
+    Ambulance_Response_Time – Ambulance response time.
+    Fire_Response_Time – Fire service response time.
+    Number_of_People – Number of people involved or affected.
+    Severity_Score – Severity level represented numerically.
+    Previous_Incidents – Number of previous incidents.
+    Emergency_Level – Emergency classification of the incident.
+The cleaned dataset contains 9,800 records and 15 columns.
+
+4. Data Quality Verification
+The cleaned dataset was used for EDA after the data-cleaning stage.
+
+The dataset was checked for:
+    Missing values
+    Duplicate records
+    Data types
+    Numerical statistics
+    Categorical distributions
+
+The cleaned dataset contains no missing values and no duplicate records, making it suitable for exploratory analysis.
+
+5. Exploratory Data Analysis
+5.1 Emergency Level Distribution
+The distribution of the Emergency_Level variable was analyzed using a count plot.
+The emergency levels are:
+    Low
+    Medium
+    High
+
+The analysis shows that High emergency incidents form the largest category, followed by Medium and Low incidents.
+This indicates that the dataset is imbalanced toward high-emergency incidents and this distribution should be considered when interpreting analysis and predictive modeling results.
+
+5.2 Incident Type Distribution
+    The frequency of different incident types was analyzed.
+    This visualization helps identify which types of public safety incidents occur more frequently.
+    Understanding the distribution of incident types can help authorities prioritize monitoring and allocate emergency resources more effectively.
+
+5.3 Incidents by Area
+    The number of incidents in different areas was analyzed.
+    The area-wise distribution helps identify locations where incidents occur more frequently.
+
+This information can be useful for planning:
+    Police deployment
+    Emergency response resources
+    CCTV monitoring
+    Public safety measures
+
+5.4 Emergency Level by Incident Type
+    The relationship between Incident_Type and Emergency_Level was analyzed.
+    The comparison shows how different incident categories are distributed across Low, Medium, and High emergency levels.
+    This analysis helps identify incident categories that are more frequently associated with serious emergency situations.
+
+5.5 Emergency Level by Area
+    Emergency levels were compared across different areas.
+    This analysis helps identify whether certain locations contain a higher proportion of serious incidents.
+    Area-based emergency analysis can support better resource allocation and location-specific safety planning.
+
+5.6 Weather vs Emergency Level
+    The relationship between weather conditions and emergency levels was analyzed.
+    Different weather categories were compared with Low, Medium, and High emergency incidents.
+    This analysis helps determine whether particular weather conditions are associated with changes in the occurrence or severity of public safety incidents.
+
+5.7 Crowd Level vs Emergency Level
+    Crowd level was compared with emergency level.
+    The analysis helps understand whether incidents occurring under higher crowd conditions are associated with different emergency-level patterns.
+    This can be useful for crowd management and public-event safety planning.
+
+5.8 Time of Day vs Emergency Level
+    Emergency levels were analyzed across different times of the day.
+    This helps identify possible time-based patterns in public safety incidents.
+    Such patterns can support better scheduling of emergency personnel and monitoring resources.
+
+6. Numerical Feature Analysis
+
+The following numerical variables were analyzed:
+    Police Response Time
+    Ambulance Response Time
+    Fire Response Time
+    Number of People
+    Severity Score
+    Previous Incidents
+Histograms were used to understand the distribution of these variables.
+Box plots were also used to compare response times and severity scores across different emergency levels.
+
+7. Severity Score Analysis
+    The Severity_Score was analyzed using box plots across the three emergency levels.
+    Severity score provides a numerical representation of incident seriousness.
+    Comparing severity scores across emergency categories helps determine whether higher emergency levels are associated with higher severity values.
+    This also provides a useful foundation for predictive modeling.
+
+8. Response Time Analysis
+    Police, ambulance, and fire response times were analyzed separately.
+    Box plots were used to compare response-time distributions across emergency levels.
+    This analysis provides an understanding of emergency-service response patterns and can help identify differences in response times between incident categories.
+
+9. Correlation Analysis
+    A correlation heatmap was generated for the numerical variables.
+
+The analysis included:
+    Police Response Time
+    Ambulance Response Time
+    Fire Response Time
+    Number of People
+    Severity Score
+    Previous Incidents
+
+Correlation analysis helps identify the strength and direction of relationships between numerical variables.
+Strong correlations can indicate variables that may provide useful information for future predictive analysis, while weak correlations indicate limited linear relationships.
+
+10. Key Findings
+
+The major findings from the EDA are:
+    The dataset contains 9,800 cleaned incident records.
+    The Emergency_Level distribution is dominated by High emergency incidents.
+    Incident types are not equally distributed, allowing identification of frequently occurring incident categories.
+    Incident frequency varies across different areas.
+    Emergency levels can be compared with incident type, area, weather, crowd level, and time of day to identify useful patterns.
+    Severity scores provide an important numerical indicator of incident seriousness.
+    Police, ambulance, and fire response times show different distributions across emergency levels.
+    Correlation analysis provides information about relationships between numerical variables.
+    The EDA results provide a useful foundation for predictive modeling and future public safety analysis.
+
+11. Tools and Technologies
+
+The following tools and technologies were used:
+    Python
+    Jupyter Notebook
+    Pandas
+    NumPy
+    Matplotlib
+    Seaborn
+
+These tools were used for data loading, statistical analysis, data exploration, and visualization.
+
+12. Conclusion
+Exploratory Data Analysis was successfully performed on the Smart City Public Safety dataset.
+The analysis examined the dataset structure, emergency-level distribution, incident types, areas, weather conditions, crowd levels, time of day, severity scores, response times, and numerical correlations.
+The visualizations helped identify patterns and relationships within the public safety data. These findings can support better understanding of emergency incidents and provide a foundation for future machine learning and data-driven public safety solutions.
+The EDA stage also complements the project's ML component by providing a better understanding of the variables before applying predictive models. The overall problem statement specifically positions the project as a progression from data preprocessing and traditional ML toward more advanced public-safety capabilities.
